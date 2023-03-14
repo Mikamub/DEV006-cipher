@@ -1,0 +1,35 @@
+body {
+  background-color: black;
+  background-attachment: fixed;
+  background-image: url("Imagenes/fondo.png");
+  background-repeat: no-repeat;
+  background-size: 110%;
+  }
+.title {
+  background-color: rgba(245, 244, 255, 0.2);
+  /*opacity: 0.2;*/
+  color: #2d85a4;
+  font-size: 400%;
+  text-align: center;
+  padding: 25px;
+  font-family: "Arial", "Helvetica Neue", "Helvetica", "sans-serif";
+  }
+
+.paragraph {
+  color: rgb(252, 246, 253);
+  list-style-type: none;
+  text-align: center;
+  font-family: "Arial", "Helvetica Neue", "Helvetica", "sans-serif";
+  padding: 120px;
+  background-color: rgba(245, 244, 255, 0.2);
+  }
+em {
+  color:#5aa7c8 ;
+  font-weight: bold
+  }
+::placeholder{
+  font-size: 16px;
+  }
+.codein{
+  text-align: center;
+  }
