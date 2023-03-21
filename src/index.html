@@ -18,14 +18,25 @@
   <!--</div>-->
   <br>
   <div class="codein">
-    <p>Ingresa la palabra que deseas <em>decodificar o codificar</em>, luego elije un número de desplazamiento entre 1 y
+    <p>Ingresa la palabra que deseas <em>decodificar o codificar en mayúsculas</em>, luego elije un número de
+      desplazamiento entre 1 y
       20 y haz click en el boton correspondiente!</p>
-    <p><input type placeholder="Ingresa palabra" id="code"><button id="sendcode">Codifica!</button><button
-        id="sendcodeout">Decodifica!</button></p>
-    <input type="number" id="bar" min="1" max="100" value="1">
+    <p><input type placeholder="Ingresa palabra" id="code"><input type="number" id="bar" min="1" max="100" value="1"></p>
+    <p><button id="sendcode">Codifica!</button><button id="sendcodeout">Decodifica!</button></p>
+    
   </div>
-
+  <div class="resultado">
+    <p> El resultado de su codificacion  es:</p>
+  </div>
+  <div class="resultado" id="resultado Encode">
+  </div>
+  <div class="resultado">
+    <p> El resultado de su decodificacion  es:</p>
+  </div>
+  <div class="resultado" id="resultado Decode">
+  </div>
 
   <script src="index.js" type="module"></script>
 </body>
+
 </html>

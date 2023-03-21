@@ -2,6 +2,7 @@ import cipher from './cipher.js';
 
 let word;
 let offset;
+const result = document.getElementById("resultado Encode");
 const barValue = document.getElementById("bar");
 const enter = document.getElementById("sendcode");
 enter.addEventListener("click", function () {
@@ -12,8 +13,12 @@ enter.addEventListener("click", function () {
 
     let wordEncode = cipher.encode(offset,word);
     console.log(wordEncode);
+    let resultEncode =  " " + wordEncode;
+    result.innerHTML=resultEncode;
 });
 
+
+const result1 = document.getElementById("resultado Decode");
 let word1;
 const enterCode = document.getElementById("sendcodeout");
 enterCode.addEventListener("click", function () {
@@ -23,11 +28,8 @@ enterCode.addEventListener("click", function () {
 
     let wordDecode = cipher.decode(offset,word1);
     console.log(wordDecode);
+    let resultDecode =  " " + wordDecode;
+    result1.innerHTML=resultDecode;
     //console.log(word1);
     //console.log(offset);
 });
-
-// barValue.addEventListener("input", function(){
-// offset = barValue.getElementById("bar").value
-// console.log(offset)
-// });
